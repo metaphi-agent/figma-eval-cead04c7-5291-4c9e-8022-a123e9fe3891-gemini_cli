@@ -1,19 +1,24 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 @theme {
-  --font-sans: "DM Sans", sans-serif;
-  
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
   --color-primary-black: #181D27;
-  --color-gray-light: #F9F9F9;
-  --color-white: #FFFFFF;
-  --color-input-line: #E2E2E2; /* Assumed from "Default Input BG line" */
+  --color-primary-purple: #28125D;
+  --color-gray-light: #C4C4C4;
+  --color-gray-dark: #757575;
+  --color-gray-very-light: #F9F9F9;
+  --color-text-main: #181D27;
+  --color-text-subdue: #8F9098;
+  --color-border-default: #E0E0E0;
 }
 
 body {
-  font-family: var(--font-sans);
-  background-color: var(--color-gray-light);
-  color: var(--color-primary-black);
-  margin: 0;
-  padding: 0;
+  font-family: var(--font-dm-sans);
+  background-color: var(--color-gray-very-light);
+  color: var(--color-text-main);
   -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,19 @@
+{
+  "colors": {
+    "primary-black": "#181D27",
+    "primary-purple": "#28125D",
+    "gray-light": "#C4C4C4",
+    "gray-dark": "#757575",
+    "gray-very-light": "#F9F9F9",
+    "white": "#FFFFFF",
+    "text-main": "#181D27",
+    "text-subdue": "#8F9098",
+    "border-default": "#E0E0E0"
+  },
+  "typography": {
+    "font-family": {
+      "dm-sans": "DM Sans, sans-serif",
+      "poppins": "Poppins, sans-serif"
+    }
+  }
+}

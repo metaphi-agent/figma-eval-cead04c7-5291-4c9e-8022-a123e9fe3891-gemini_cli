@@ -1,17 +1,21 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const Profile = React.lazy(() => import('./pages/Profile'));
+// Lazy load pages
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
+const ProfileEdit = React.lazy(() => import('./pages/ProfileEdit'));
 
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div className="h-screen w-full flex items-center justify-center">Loading...</div>}>
+      <Suspense fallback={
+        <div className="min-h-screen flex items-center justify-center bg-gray-very-light">
+          <div className="w-8 h-8 border-4 border-primary-purple border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      }>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<Navigate to="/profile" replace />} />
+          <Route path="/edit" element={<ProfileEdit />} />
         </Routes>
       </Suspense>
     </Router>
